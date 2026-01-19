@@ -1,0 +1,32 @@
+[2026-01-18 23:12:36] [CRITICAL] HIGH_ERROR_COUNT: Total error count 12895 exceeds threshold 100
+[2026-01-18 23:12:43] [CRITICAL] CRITICAL_ERRORS: Found 12895 critical errors (threshold: 5)
+[2026-01-18 23:12:53] [CRITICAL] FREQUENT_ERRORS: Multiple Frequent Errors Detected (10 distinct types > 5 occ.)
+
+Errors occurring > 5 times:
+- AuthService unavailable: 503 Service Unavailable: 2115
+- Payment declined: Gateway unavailable: 1683
+- Timeout waiting for lock on InventoryDB: 1638
+- Connection refused to WebServer at 10.0.0.45: 487
+- Connection refused to AuthService at 10.0.0.45: 190
+- Connection refused to OrderProcessor at 10.0.0.45: 162
+- Connection refused to WebServer at 10.0.0.12: 130
+- Connection refused to PaymentGateway at 10.0.0.45: 99
+- Connection refused to WebServer at 10.0.0.88: 89
+- Connection refused to AuthService at 10.0.0.12: 55
+
+[2026-01-19 20:37:57] [CRITICAL] HIGH_ERROR_COUNT: Total error count 12895 exceeds threshold 100
+[2026-01-19 20:38:03] [CRITICAL] CRITICAL_ERRORS: Found 12895 critical errors (threshold: 5)
+[2026-01-19 20:38:14] [CRITICAL] FREQUENT_ERRORS: Multiple Frequent Errors Detected (10 distinct types > 5 occ.)
+
+Errors occurring > 5 times:
+- AuthService unavailable: 503 Service Unavailable: 2115
+- Payment declined: Gateway unavailable: 1683
+- Timeout waiting for lock on InventoryDB: 1638
+- Connection refused to WebServer at 10.0.0.45: 487
+- Connection refused to AuthService at 10.0.0.45: 190
+- Connection refused to OrderProcessor at 10.0.0.45: 162
+- Connection refused to WebServer at 10.0.0.12: 130
+- Connection refused to PaymentGateway at 10.0.0.45: 99
+- Connection refused to WebServer at 10.0.0.88: 89
+- Connection refused to AuthService at 10.0.0.12: 55
+
