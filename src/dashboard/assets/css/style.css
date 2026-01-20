@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
 
 /* --- Global Variables & Reset --- */
 :root {
@@ -464,4 +466,47 @@ div[data-baseweb="input"]>div:focus-within {
     font-size: 32px;
     color: #3B82F6;
     animation: scaleIn 0.5s ease-out both;
+}
+
+/* --- Settings Page Styles --- */
+.settings-nav-item {
+    font-size: 0.85rem;
+    color: #64748B;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.settings-nav-item:hover {
+    background-color: #F1F5F9;
+    color: #1E293B;
+}
+
+.settings-nav-item.active {
+    background-color: #0D9488;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.settings-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.settings-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
 }

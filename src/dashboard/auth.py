@@ -98,3 +98,12 @@ def get_user_email(username):
     result = c.fetchone()
     conn.close()
     return result[0] if result else None
+
+def get_canonical_username(identifier):
+    """Retrieve the canonical username for a given identifier (username or email)."""
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT username FROM users WHERE username = ? OR email = ?", (identifier, identifier))
+    result = c.fetchone()
+    conn.close()
+    return result[0] if result else identifier

@@ -119,8 +119,10 @@ def login_page():
             if submitted:
                 if auth.check_credentials(username, password):
                     st.session_state.logged_in = True
-                    st.session_state.username = username
-                    st.session_state.user_email = auth.get_user_email(username)
+                    # Retrieve canonical username (in case login was via email)
+                    real_username = auth.get_canonical_username(username)
+                    st.session_state.username = real_username
+                    st.session_state.user_email = auth.get_user_email(real_username)
                     st.rerun()
                 else:
                     st.error("Incorrect username or password")
